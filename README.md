@@ -65,6 +65,8 @@ function onElementAvailable(selector, callback) {
 
 onElementAvailable(elementName, loadCompressor);
 
+```
+
 # License
 
 This project is licensed under the MIT License. Feel free to modify and distribute it according to the terms of this license.
