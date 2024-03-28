@@ -1,0 +1,23 @@
+  {
+    "manifest_version": 3,
+    "name": "YouTube Player audio compressor",
+    "description": "Compress de youtube audio player to sound even on anoying uneven podcast or videos",
+    "version": "1.0",
+    "icons": {
+      "128": "images/icon128.png"
+    },
+    "action": {
+      "default_title": "YouTube Player audio compressor",
+      "default_icon": {
+        "128": "images/icon128.png"
+      }
+    },
+    "permissions": ["activeTab", "storage"],
+    "content_scripts": [
+      {
+        "matches": ["https://www.youtube.com/*"],
+        "js": ["content.js"],
+        "run_at": "document_idle"
+      }
+    ]
+  }
