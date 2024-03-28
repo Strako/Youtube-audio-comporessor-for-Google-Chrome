@@ -1,6 +1,6 @@
 # YouTube Audio Compressor Extension for Google Chrome
 
-This repository contains a Google Chrome extension that enables audio compression for YouTube videos using the Web Audio API. The compression is based on the Mozilla Web API `BaseAudioContext.createDynamicsCompressor()` method.
+This repository contains a Google Chrome extension that enables audio compression for YouTube videos using the Web Audio API. The compression is based on the Mozilla Web API `BaseAudioContext.createDynamicsCompressor() method`.
 
 ## Installation
 
