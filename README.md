@@ -67,7 +67,6 @@ onElementAvailable(elementName, loadCompressor);
 
 ```
 
-```markdown
 ## Modifying Compressor Parameters
 
 To customize the behavior of the audio compressor, you can adjust the following parameters:
@@ -98,7 +97,6 @@ To customize the behavior of the audio compressor, you can adjust the following 
    - Modify to control how long it takes for the compressor to return to normal operation after the signal drops below the threshold.
 
 To modify these values, locate the corresponding lines in the code and adjust the numerical parameters assigned to each property accordingly. Experiment with different values to achieve the desired compression effect based on the characteristics of the audio being processed.
-```
 
 # License
 
