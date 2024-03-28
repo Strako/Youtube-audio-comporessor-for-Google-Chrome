@@ -67,6 +67,39 @@ onElementAvailable(elementName, loadCompressor);
 
 ```
 
+```markdown
+## Modifying Compressor Parameters
+
+To customize the behavior of the audio compressor, you can adjust the following parameters:
+
+1. **Threshold**: 
+   - Determines the level above which compression begins.
+   - Default value: `-70` dB.
+   - Modify this value to change when compression starts. Lower values start compression earlier.
+
+2. **Knee**: 
+   - Defines the range over which the transition from uncompressed to compressed audio occurs smoothly.
+   - Default value: `20` dB.
+   - Adjust this value to control the smoothness of the compression transition. Increase for a smoother transition, decrease for a more abrupt one.
+
+3. **Ratio**:
+   - Sets the amount of compression applied to the audio signal once it exceeds the threshold.
+   - Default value: `12`.
+   - Higher ratios result in more aggressive compression, while lower ratios produce more subtle compression.
+
+4. **Attack**:
+   - Determines the time it takes for the compressor to respond to an increase in signal level.
+   - Default value: `0` seconds.
+   - Adjust to control how quickly compression kicks in after the signal exceeds the threshold. Shorter times for faster response.
+
+5. **Release**:
+   - Determines how quickly the compressor stops compressing the signal once it falls below the threshold.
+   - Default value: `0.75` seconds.
+   - Modify to control how long it takes for the compressor to return to normal operation after the signal drops below the threshold.
+
+To modify these values, locate the corresponding lines in the code and adjust the numerical parameters assigned to each property accordingly. Experiment with different values to achieve the desired compression effect based on the characteristics of the audio being processed.
+```
+
 # License
 
 This project is licensed under the MIT License. Feel free to modify and distribute it according to the terms of this license.
